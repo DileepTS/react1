@@ -1,0 +1,29 @@
+#main-block ul{
+    color: aqua;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+#main{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    background-color: blue;
+    align-items: center;
+}
+#main-block ul li a{
+    color: black;
+    text-decoration: none;
+    font-size:20px;
+}
+
+#main-block ul li{
+    list-style: none;
+}
+
+#image{
+    height: 70px;
+    width: 150px;
+}
+
