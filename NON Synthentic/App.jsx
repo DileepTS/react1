@@ -5,21 +5,21 @@ constructor()
 {
 super()
 this.state={
-  username:"Upendra"
+  username:" "
 }
 }
 componentDidMount()
 {
-  let btn=document.querySelector("button")
-  btn.addEventListener("click",()=>{
-    this.setState({username:this.state.username="KGF"})
+  let input=document.querySelector("input")
+  input.addEventListener("keypress",(e)=>{
+    this.setState({username:e.target.value})
   })
 }
   render() {
     return (
       <>
       <div>{this.state.username}</div>
-      <button>CHANGE</button>
+      <input type="text"/>
       </>
     )
   }
